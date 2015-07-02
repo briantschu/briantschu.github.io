@@ -386,14 +386,14 @@ html {
     padding-left: 0.75em; }
   #nav #name h1 {
     color: white;
-    font-size: 1.25em;
+    font-size: 1.22242em;
     text-align: left;
     margin: 0;
     font-family: "Lato", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-weight: 400; }
     @media screen and (min-width: 640px) {
       #nav #name h1 {
-        font-size: 1.22242em; } }
+        font-size: 1.25em; } }
   #nav #collaborate {
     display: none; }
     @media screen and (min-width: 640px) {
