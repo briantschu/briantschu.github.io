@@ -377,7 +377,7 @@
   $('#hero').height(heroh);
   $('#herobg').height(viewporth);
 
-  if(/Bingbot|Googlebot/i).test(navigator.userAgent || navigator.vendor)){
+  if((/Bingbot|Googlebot/i).test(navigator.userAgent || navigator.vendor)){
       $('#hero').height(1);
       $('#herobg').height(1);
   };
