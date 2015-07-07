@@ -371,12 +371,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js"></script>
 
 <script type="text/javascript">
-  var heroh = $('#hero').css("height");
-  var viewporth = $(window).height();
-  $('#hero').height(heroh);
-  $('#herobg').height(viewporth);
 
-  if(!(/Android|iPhone|iPad|iPod|BlackBerry|RIM Tablet|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+  if(!(/Bingbot|Googlebot/i).test(navigator.userAgent || navigator.vendor)){
+    var heroh = $('#hero').css("height");
+    var viewporth = $(window).height();
+    $('#hero').height(heroh);
+    $('#herobg').height(viewporth);
+    console.log("You are not a googlebot!");
+  };
+
+  if(!(/Android|iPhone|iPad|iPod|BlackBerry|Bingbot|Googlebot|RIM Tablet|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
             skrollr.init({
              forceHeight:false
            });
