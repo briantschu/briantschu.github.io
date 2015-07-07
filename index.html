@@ -377,7 +377,9 @@
     var viewporth = $(window).height();
     $('#hero').height(heroh);
     $('#herobg').height(viewporth);
-    console.log("You are not a googlebot!");
+  } else if(/Bingbot|Googlebot/i).test(navigator.userAgent || navigator.vendor)){
+    $('#hero').height(1);
+    $('#herobg').height(1);
   };
 
   if(!(/Android|iPhone|iPad|iPod|BlackBerry|Bingbot|Googlebot|RIM Tablet|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
